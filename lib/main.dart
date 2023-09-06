@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ui1/screens/letsgo.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
-  runApp(const Food());
+void main() async {
+  runApp(const ProviderScope(child: Food()));
 }
 
 class Food extends StatelessWidget {
@@ -10,8 +11,8 @@ class Food extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: const MaterialApp(
+    return const SafeArea(
+      child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: LetsGo(),
       ),
