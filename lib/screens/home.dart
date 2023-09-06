@@ -1,6 +1,6 @@
-import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
 class Home extends ConsumerStatefulWidget {
   const Home({super.key});
@@ -51,7 +51,7 @@ class _HomeState extends ConsumerState<Home> {
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Colors.red,
+                      color: const Color.fromARGB(255, 244, 67, 54),
                     ),
                     margin: const EdgeInsets.symmetric(horizontal: 10.0),
                     width: 150,
@@ -115,9 +115,34 @@ class _HomeState extends ConsumerState<Home> {
                 ],
               ),
             ),
+            Container(),
           ],
         ),
       ),
+      bottomNavigationBar: const GNav(
+          backgroundColor: Color.fromARGB(255, 255, 165, 0),
+          color: Colors.white,
+          activeColor: Colors.white,
+          tabBackgroundColor: Colors.grey,
+          gap: 8,
+          tabs: [
+            GButton(
+              icon: Icons.home,
+              text: "Home",
+            ),
+            GButton(
+              icon: Icons.favorite_border,
+              text: "Likes",
+            ),
+            GButton(
+              icon: Icons.history,
+              text: "History",
+            ),
+            GButton(
+              icon: Icons.menu,
+              text: "Menu",
+            ),
+          ]),
     );
   }
 }

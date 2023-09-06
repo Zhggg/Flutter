@@ -38,6 +38,7 @@ dependencies:
   http: ^1.1.0
   flutter_riverpod: ^2.4.0
   blurrycontainer: ^1.0.2
+  google_nav_bar: ^5.0.6
 
 dev_dependencies:
   flutter_test:
