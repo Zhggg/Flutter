@@ -38,7 +38,7 @@ class _LetsGoState extends ConsumerState<LetsGo> {
                       blurRadius: 40.0,
                       offset: Offset(2.0, 2.0),
                       color: Colors.grey,
-                    )
+                    ),
                   ],
                 ),
               ),
