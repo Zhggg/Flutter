@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ui1/service/categoryprovider.dart';
+import 'package:ui1/service/provider/category_provider.dart';
 import './../model/categoryInfo.dart';
 
 class CategoryData extends ConsumerStatefulWidget {
@@ -15,32 +16,24 @@ class CategoryData extends ConsumerStatefulWidget {
 }
 
 class _CategoryDataState extends ConsumerState<CategoryData> {
-  // final jsonProvider = FutureProvider<List<Map<String, dynamic>>>((ref) async {
-  //   final jsonStr = await rootBundle.loadString("assets/category.json");
-  //   final jsonData = json.decode(jsonStr) as List<dynamic>;
+  // int? selectedCategory;
+  // List<Map<String, dynamic>> filteredItems = [];
 
-  //   return jsonData.cast<Map<String, dynamic>>();
-
-  //   var categories = cat;
-  //   log(categories as String);
-  // });
-
-  int? selectedCategory;
-  List<Map<String, dynamic>> filteredItems = [];
-
-  void filterItems(int categoryId) {
-    selectedCategory = categoryId;
-    filteredItems = allItemsData
-        .where((item) => (item['cid'] as int) == categoryId)
-        .toList();
-    setState(() {});
-  }
+  // void filterItems(int categoryId) {
+  //   selectedCategory = categoryId;
+  //   filteredItems = allItemsData
+  //       .where((item) => (item['cid'] as int) == categoryId)
+  //       .toList();
+  //   setState(() {});
+  // }
 
   @override
   Widget build(BuildContext context) {
+    final categoryProv = ref.watch(categProvider.notifier);
+    final categoryState = ref.watch(categProvider);
+
     return Column(
       children: [
-        Text("asdasd"),
         SizedBox(
           height: 150,
           child: ListView.builder(
@@ -50,10 +43,10 @@ class _CategoryDataState extends ConsumerState<CategoryData> {
               final item = allCategoriesRawData[index];
               return GestureDetector(
                 onTap: () {
-                  filterItems(item['cid']);
+                  categoryProv.filterItems(item['cid']);
                 },
                 child: Card(
-                  color: selectedCategory == item['cid']
+                  color: categoryState.selectedCategory == item['cid']
                       ? Colors.red
                       : Colors.white,
                   child: Column(
@@ -73,61 +66,33 @@ class _CategoryDataState extends ConsumerState<CategoryData> {
           ),
         ),
         Divider(),
-        Container(
-          // height: MediaQuery.sizeOf(context).height * 0.5,
-          child: ListView.builder(
-            physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            itemCount: filteredItems.length,
-            itemBuilder: (context, index) {
-              final item = filteredItems[index];
-              return Card(
-                child: Column(
-                  children: [
-                    Image.asset(
-                      item["photo"],
-                      width: 100,
-                      height: 100,
-                      fit: BoxFit.cover,
-                    ),
-                    Text(item['title'])
-                  ],
-                ),
-              );
-            },
+        if (categoryState.loading) Center(child: CircularProgressIndicator()),
+        if (!categoryState.loading)
+          Container(
+            // height: MediaQuery.sizeOf(context).height * 0.5,
+            child: ListView.builder(
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              itemCount: (categoryState.filteredItems ?? []).length,
+              itemBuilder: (context, index) {
+                final item = (categoryState.filteredItems ?? [])[index];
+                return Card(
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        item["photo"],
+                        width: 100,
+                        height: 100,
+                        fit: BoxFit.cover,
+                      ),
+                      Text(item['title'])
+                    ],
+                  ),
+                );
+              },
+            ),
           ),
-        ),
       ],
     );
-    // final categories = ref.watch(jsonProvider);
-    // return categories.when(
-    //   data: (categories) {
-    // return SizedBox(
-    //   height: 150,
-    //   child: ListView.builder(
-    //     scrollDirection: Axis.horizontal,
-    //     itemCount: categories.length,
-    //     itemBuilder: (context, index) {
-    //       final item = categories[index];
-    //       return Card(
-    //         child: Column(
-    //           children: [
-    //             Image.asset(
-    //               item["photo"],
-    //               width: 100,
-    //               height: 100,
-    //               fit: BoxFit.cover,
-    //             ),
-    //             Text(item['title'])
-    //           ],
-    //         ),
-    //       );
-    //     },
-    //   ),
-    // );
-    //   },
-    //   loading: () => const CircularProgressIndicator(),
-    //   error: (error, stackTrace) => const Text("Error loading data"),
-    // );
   }
 }

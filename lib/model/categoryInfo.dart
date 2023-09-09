@@ -6,13 +6,13 @@ List<Map<String, dynamic>> allCategoriesRawData = [
 ];
 
 List<Map<String, dynamic>> allItemsData = [
-  // {
-  //   "iid": 1,
-  //   "cid": 1,
-  //   "title": "Coke",
-  //   "photo": "assets/images/coke.png",
-  //   "detail": "asdfas fasd fasd fasd fas"
-  // },
+  {
+    "iid": 1,
+    "cid": 1,
+    "title": "Coke",
+    "photo": "assets/images/coke.png",
+    "detail": "asdfas fasd fasd fasd fas"
+  },
   {
     "iid": 2,
     "cid": 1,
