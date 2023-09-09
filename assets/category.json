@@ -1,0 +1,22 @@
+[
+    {
+        "cid": 1,
+        "title": "Drink",
+        "photo": "assets/images/drink.jpg"
+    },
+    {
+        "cid": 2,
+        "title": "Fast Food",
+        "photo": "assets/images/fastf.jpg"
+    },
+    {
+        "cid": 3,
+        "title": "Sea Food",
+        "photo": "assets/images/ramen.jpg"
+    },
+    {
+        "cid": 4,
+        "title": "Ramen",
+        "photo": "assets/images/seaf.jpg"
+    }
+]

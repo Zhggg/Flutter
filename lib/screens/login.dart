@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:ui1/screens/home.dart';
+import 'package:ui1/screens/hom.dart';
 
 class Login extends ConsumerStatefulWidget {
   const Login({super.key});
