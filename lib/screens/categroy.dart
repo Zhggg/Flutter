@@ -47,17 +47,30 @@ class _CategoryDataState extends ConsumerState<CategoryData> {
                 },
                 child: Card(
                   color: categoryState.selectedCategory == item['cid']
-                      ? Colors.red
+                      ? Colors.grey
                       : Colors.white,
-                  child: Column(
+                  child: Stack(
                     children: [
                       Image.asset(
                         item["photo"],
-                        width: 100,
-                        height: 100,
+                        width: 272,
+                        height: 150,
                         fit: BoxFit.cover,
                       ),
-                      Text(item['title'])
+                      Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 58.0,
+                        ),
+                        alignment: Alignment.center,
+                        child: Text(
+                          item['title'],
+                          style: TextStyle(
+                            fontSize: 35,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -68,30 +81,49 @@ class _CategoryDataState extends ConsumerState<CategoryData> {
         Divider(),
         if (categoryState.loading) Center(child: CircularProgressIndicator()),
         if (!categoryState.loading)
-          Container(
-            // height: MediaQuery.sizeOf(context).height * 0.5,
-            child: ListView.builder(
-              physics: NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              itemCount: (categoryState.filteredItems ?? []).length,
-              itemBuilder: (context, index) {
-                final item = (categoryState.filteredItems ?? [])[index];
-                return Card(
+          const Text(
+            "Items",
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 0, 128, 128),
+            ),
+          ),
+        Container(
+          // height: MediaQuery.sizeOf(context).height * 0.5,
+          child: GridView.builder(
+            // physics: NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10),
+            itemCount: (categoryState.filteredItems ?? []).length,
+            itemBuilder: (context, index) {
+              final item = (categoryState.filteredItems ?? [])[index];
+              return Card(
+                child: GestureDetector(
                   child: Column(
                     children: [
                       Image.asset(
                         item["photo"],
-                        width: 100,
-                        height: 100,
-                        fit: BoxFit.cover,
+                        width: 200,
+                        height: 170,
+                        fit: BoxFit.fitHeight,
                       ),
-                      Text(item['title'])
+                      Text(
+                        item['title'],
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
-                );
-              },
-            ),
+                ),
+              );
+            },
           ),
+        ),
       ],
     );
   }
