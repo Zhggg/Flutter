@@ -1,7 +1,7 @@
 [
     {
         "cid": 1,
-        "title": "Drink",
+        "title": "Cold Drink",
         "photo": "assets/images/drink.jpg"
     },
     {
@@ -12,11 +12,11 @@
     {
         "cid": 3,
         "title": "Sea Food",
-        "photo": "assets/images/ramen.jpg"
+        "photo": "assets/images/seaf.jpg"
     },
     {
         "cid": 4,
-        "title": "Ramen",
-        "photo": "assets/images/seaf.jpg"
+        "title": "Ramen Noodles",
+        "photo": "assets/images/ramen.jpg"
     }
 ]

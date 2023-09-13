@@ -46,6 +46,7 @@ class Home extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: const GNav(
+          padding: EdgeInsets.all(15),
           backgroundColor: Color.fromARGB(255, 255, 165, 0),
           color: Colors.white,
           activeColor: Colors.white,

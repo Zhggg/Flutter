@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class CategoryState {
   final bool loading;
   final bool error;

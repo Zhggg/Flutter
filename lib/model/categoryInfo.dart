@@ -1,8 +1,8 @@
 List<Map<String, dynamic>> allCategoriesRawData = [
-  {"cid": 1, "title": "Drink", "photo": "assets/images/drink.jpg"},
+  {"cid": 1, "title": "Cold Drink", "photo": "assets/images/drink.jpg"},
   {"cid": 2, "title": "Fast Food", "photo": "assets/images/fastf.jpg"},
-  {"cid": 3, "title": "Sea Food", "photo": "assets/images/ramen.jpg"},
-  {"cid": 4, "title": "Ramen", "photo": "assets/images/seaf.jpg"}
+  {"cid": 3, "title": "Sea Food", "photo": "assets/images/seaf.jpg"},
+  {"cid": 4, "title": "Ramen Noodles", "photo": "assets/images/ramen.jpg"}
 ];
 
 List<Map<String, dynamic>> allItemsData = [
@@ -11,97 +11,319 @@ List<Map<String, dynamic>> allItemsData = [
     "cid": 1,
     "title": "Coke",
     "photo": "assets/images/coke.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "detail":
+        "Coke can refer to various things, but most commonly, it Momo refers to Coca-Cola, a popular carbonated soft drink created by John Pemberton in the late 19th century. Coca-Cola is known for its sweet and fizzy taste and is available in various formulations, including regular, Diet Coke, Coca-Cola Zero Sugar, and various flavor options. The Coca-Cola Company, headquartered in Atlanta, Georgia, is a global beverage giant that produces not only Coca-Cola but also a wide range of other beverages, making it one of the world's largest beverage companies. Additionally, coke is sometimes used as slang for cocaine, an illegal and highly addictive stimulant drug."
   },
   {
     "iid": 2,
     "cid": 1,
     "title": "Sprite",
     "photo": "assets/images/sprite.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "detail":
+        "Sprite is a popular lemon-lime flavored carbonated soft drink produced by The Coca-Cola Company. Known for its crisp and refreshing taste, Sprite is caffeine-free and has a clear, colorless-appearance. It was introduced in 1961 and has since become a well-loved beverage worldwide. Sprite is often enjoyed as a standalone beverage and is also used as a mixer in various cocktails and mocktails due to its zesty citrus flavor."
   },
   {
     "iid": 3,
     "cid": 1,
     "title": "Dew",
     "photo": "assets/images/dew.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "detail":
+        "Dew typically Momo refers to Mountain Dew, a citrus-flavored carbonated soft drink produced by PepsiCo. It's known for its vibrant green color and unique citrusy flavor with a hint of caffeine. Introduced in the 1940s, Mountain Dew has become one of the most recognizable and popular soda brands globally. It offers various flavor variations and limited-edition releases, making it a favorite among soda enthusiasts and gamers. Mountain Dew is often associated with a bold and energizing taste, and it's available in a range of package sizes, from cans and bottles to fountain drinks."
   },
   {
     "iid": 4,
     "cid": 1,
     "title": "Pepsi",
     "photo": "assets/images/pepsi.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "detail":
+        "Pepsi is a well-known carbonated soft drink produced by PepsiCo. It's recognized for its distinct sweet and cola-flavored taste, often seen as a competitor to Coca-Cola. Introduced in the late 19th century, Pepsi has grown into one of the world's leading beverage brands, offering various formulations such as regular Pepsi, Diet Pepsi (with no sugar), and Pepsi Max (a low-calorie version). Pepsi is also part of a broader product lineup that includes snacks and other beverages. It's widely available globally and is a popular choice among soda consumers."
   },
   {
     "iid": 5,
-    "cid": 2,
-    "title": "Momo",
-    "photo": "assets/images/momo.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "cid": 1,
+    "title": "Fanta",
+    "photo": "assets/images/fanta.png",
+    "detail":
+        "Fanta is a popular carbonated soft drink produced by The Coca-Cola Company. It's known for its fruity and vibrant flavors, with variations like orange, grape, and more. Fanta was originally created in Germany during World War II when Coca-Cola's ingredients were scarce, and it has since become a global brand. It offers a refreshing and sweet taste, making it a favorite among those who enjoy fruity soda options. Fanta is available in various countries and is appreciated for its diverse range of flavors, providing a unique soda experience to consumers worldwide."
   },
   {
     "iid": 6,
-    "cid": 4,
-    "title": "Chicken",
-    "photo": "assets/images/chickenr.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "cid": 1,
+    "title": "Slice",
+    "photo": "assets/images/slice.png",
+    "detail":
+        "Slice was a fruit-flavored carbonated soft drink brand originally introduced by PepsiCo in the late 1980s. It featured a range of citrus and fruit-based flavors like orange, grape, and apple. While Slice was once a popular beverage, it has seen changes in availability and branding over the years, and its presence in the market has diminished. As of my knowledge cutoff date in September 2021, Slice may not be as widely available as some other soda brands, but it remains nostalgic for those who remember its original incarnation. Please note that the status of brands and products can change over time, so it's a good idea to check for the most current information regarding Slice if you are interested in its current availability and status."
   },
   {
     "iid": 7,
-    "cid": 4,
-    "title": "Veg",
-    "photo": "assets/images/vegr.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "cid": 1,
+    "title": "ThumbsUp",
+    "photo": "assets/images/thumbsup.png",
+    "detail":
+        "Thumbs Up is a popular Indian carbonated soft drink produced by The Coca-Cola Company. Introduced in India in 1977, Thumbs Up is known for its bold and unique flavor, often described as a spicier cola compared to its American counterpart, Coca-Cola. It has gained a dedicated following in India and is available in various sizes, including bottles and cans. Thumbs Up has become an iconic and beloved soda brand in India, catering to the preferences of consumers who enjoy a more intense cola taste."
   },
   {
     "iid": 8,
-    "cid": 4,
-    "title": "Sea",
-    "photo": "assets/images/sear.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "cid": 1,
+    "title": "Fruti",
+    "photo": "assets/images/fruti.png",
+    "detail":
+        "Fruti is a brand known for its fruit-flavored beverages, particularly fruit juices and drinks. It offers a range of fruit-based products, including juices, nectars, and fruit drinks in various flavors like mango, orange, apple, and more. Fruti aims to provide consumers with a refreshing and fruity beverage experience, often focusing on natural fruit flavors and high-quality ingredients. While there are several brands that offer fruit-based drinks, Fruti is recognized for its commitment to delivering a taste of real fruit in its products, appealing to those who enjoy fruit-flavored beverages. Please note that the availability and specific products offered by Fruti may vary by region and market."
   },
   {
     "iid": 9,
-    "cid": 4,
-    "title": "Pork",
-    "photo": "assets/images/porkr.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "cid": 1,
+    "title": "RedBull",
+    "photo": "assets/images/redbull.png",
+    "detail":
+        "Red Bull is a globally renowned energy drink brand introduced in Austria in 1987. It's known for its stimulating effects due to its high caffeine and taurine content, which are believed to boost energy and alertness. Marketed as an energy booster for physical and mental performance, Red Bull comes in distinctive slim cans and offers various flavors and formulations, including sugar-free options. It has become a popular choice among individuals seeking an energy boost, particularly in the realms of sports and late-night activities. Red Bull has also sponsored a wide range of extreme sports and events, contributing to its widespread recognition."
   },
   {
     "iid": 10,
-    "cid": 2,
-    "title": "Sausage",
-    "photo": "assets/images/sausage.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "cid": 1,
+    "title": "Mirinda",
+    "photo": "assets/images/mirinda.png",
+    "detail":
+        "Mirinda is a brand of carbonated soft drinks produced by PepsiCo. It's known for its fruity and refreshing flavors, with variations like orange, grape, and pineapple, among others. Mirinda is available in various countries and is particularly popular in many parts of Asia, the Middle East, and Africa. The brand's vibrant and bold fruit flavors make it a favorite among consumers who enjoy fruity soda options. Mirinda's portfolio includes regular and diet versions to cater to different tastes and dietary preferences."
   },
   {
     "iid": 11,
     "cid": 2,
-    "title": "Burger",
-    "photo": "assets/images/burger.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "title": "Momo",
+    "photo": "assets/images/momo.png",
+    "detail":
+        "Momo Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
   },
   {
     "iid": 12,
-    "cid": 3,
-    "title": "King Crab",
-    "photo": "assets/images/crab.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "cid": 2,
+    "title": "Sausage",
+    "photo": "assets/images/sausage.png",
+    "detail":
+        "Sausage is a highly versatile food product made from ground meat, typically pork, beef, or a combination of meats, although sausages can also be made from other meats like chicken or turkey. The meat is often mixed with various seasonings, spices, and herbs to enhance flavor. This mixture is then encased in a casing, which can be natural (such as animal intestines) or synthetic. Sausages come in a wide variety of types and flavors, with regional variations from around the world. Some common types of sausages include breakfast sausages, Italian sausages, bratwurst, chorizo, and kielbasa, among many others. Sausages can be cooked in various ways, including grilling, frying, baking, or simmering, and they are used in a wide range of dishes, from breakfast items to hearty stews and sandwiches."
   },
   {
     "iid": 13,
     "cid": 2,
-    "title": "Tuna",
-    "photo": "assets/images/lobster.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "title": "Burger",
+    "photo": "assets/images/burger.png",
+    "detail":
+        "A burger, short for hamburger, is a popular and iconic fast-food sandwich consisting of a cooked ground meat patty, typically made from beef, but variations can use other meats or vegetarian ingredients like plant-based patties. The meat patty is seasoned and cooked, then placed inside a sliced bun, which is often toasted. Burgers are typically garnished with a variety of toppings such as lettuce, tomato, onion, pickles, cheese, ketchup, mustard, mayonnaise, and more, depending on personal preferences. The combination of the savory patty and the diverse range of toppings provides a wide spectrum of flavors and textures, making the burger a beloved and customizable food option enjoyed worldwide. It can be found in fast-food chains, restaurants, food trucks, and even homemade variations."
   },
   {
     "iid": 14,
     "cid": 2,
+    "title": "Swarma",
+    "photo": "assets/images/swarama.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 15,
+    "cid": 2,
+    "title": "Pizza",
+    "photo": "assets/images/pizza.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 16,
+    "cid": 2,
+    "title": "Samosa",
+    "photo": "assets/images/samosa.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 17,
+    "cid": 2,
+    "title": "Pakoda",
+    "photo": "assets/images/pakoda.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 18,
+    "cid": 2,
+    "title": "Panipuri",
+    "photo": "assets/images/panipuri.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 19,
+    "cid": 2,
+    "title": "Chowemin",
+    "photo": "assets/images/chowemin.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 20,
+    "cid": 2,
+    "title": "Kemma Noodles",
+    "photo": "assets/images/keema_noodles.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 21,
+    "cid": 3,
+    "title": "King Crab",
+    "photo": "assets/images/crab.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 22,
+    "cid": 3,
+    "title": "Tuna",
+    "photo": "assets/images/tuna.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 23,
+    "cid": 3,
     "title": "Lobster",
     "photo": "assets/images/lobster.png",
-    "detail": "asdfas fasd fasd fasd fas"
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 24,
+    "cid": 3,
+    "title": "Shrimp",
+    "photo": "assets/images/shrimp.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 25,
+    "cid": 3,
+    "title": "Octupus",
+    "photo": "assets/images/octupus.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 26,
+    "cid": 3,
+    "title": "Oyster",
+    "photo": "assets/images/oyster.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 27,
+    "cid": 3,
+    "title": "Mud Crab",
+    "photo": "assets/images/mcrab.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 28,
+    "cid": 3,
+    "title": "Pufferfish",
+    "photo": "assets/images/pufferfish.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 29,
+    "cid": 3,
+    "title": "Mussels",
+    "photo": "assets/images/mussels.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 30,
+    "cid": 3,
+    "title": "Catfish",
+    "photo": "assets/images/catfish.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 31,
+    "cid": 4,
+    "title": "Chicken",
+    "photo": "assets/images/chickenr.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 32,
+    "cid": 4,
+    "title": "Veg",
+    "photo": "assets/images/vegr.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 33,
+    "cid": 4,
+    "title": "Sea",
+    "photo": "assets/images/sear.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 34,
+    "cid": 4,
+    "title": "Pork",
+    "photo": "assets/images/porkr.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 35,
+    "cid": 4,
+    "title": "Tonkotsu",
+    "photo": "assets/images/tonkotsur.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 36,
+    "cid": 4,
+    "title": "Miso",
+    "photo": "assets/images/misor.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 37,
+    "cid": 4,
+    "title": "Shoyu",
+    "photo": "assets/images/shoyur.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 38,
+    "cid": 4,
+    "title": "Shio",
+    "photo": "assets/images/shior.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 39,
+    "cid": 4,
+    "title": "Tsukemen",
+    "photo": "assets/images/tsukemenr.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
+  },
+  {
+    "iid": 40,
+    "cid": 4,
+    "title": "Sapporo",
+    "photo": "assets/images/sapporor.png",
+    "detail":
+        "Momo refers to a type of dumpling popular in South Asian and Tibetan cuisines. Momos are typically made from a simple dough filled with various fillings, such as minced meat (usually pork, chicken, or lamb), vegetables, or even cheese, and they are often flavored with herbs and spices. These dumplings are typically shaped into small, bite-sized parcels and can be steamed, fried, or served in a flavorful broth. Momos are commonly served with a dipping sauce, such as tomato-based chutney or a spicy chili sauce, and they are enjoyed as a snack, appetizer, or part of a meal in countries like Nepal, Tibet, India, and Bhutan. They have gained popularity in various parts of the world due to their delicious and versatile nature."
   }
 ];
